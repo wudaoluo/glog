@@ -1,23 +1,3 @@
-//file name: glog.go
-````
-package main
-
-import (
-    "flag"
-    "github.com/golang/glog"
-)
-
-func main() {
-    flag.Parse()    // 1
-
-    glog.Info("This is a Info log")         // 2
-    glog.Warning("This is a Warning log")
-    glog.Error("This is a Error log")
-
-    glog.V(1).Infoln("level 1")     // 3
-    glog.V(2).Infoln("level 2")
-
-    glog.Flush()    // 4
-}
-```
-> ./glog -log_dir="./"
+地址 https://github.com/golang/glog
+### 我修改后的版本
+* 修改了日志格式
